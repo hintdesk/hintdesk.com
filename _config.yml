@@ -1,9 +1,9 @@
 # Site settings
 baseurl: ''
 url: 'https://www.hintdesk.com'
-title: 'Deep-fried'
-description: 'A minimalist Jekyll theme optimized for readability and performance.'
-author: 'Steven McLintock'
+title: 'Tri Nguyen'
+description: 'Hintdesk is the personal blog of Tri Nguyen'
+author: 'Tri Nguyen'
 
 # Build settings
 permalink: /:year/:month/:day/:title/
@@ -61,14 +61,11 @@ footer-menu:
 
 # Homepage
 homepage:
-  header-text: 'Deep-fried is a minimalist Jekyll theme optimized for readability and performance'
-  intro-text: 'Compatible with <a href="https://pages.github.com">GitHub Pages</a>, 
-              <a href="https://github.com/kiltandcode/deep-fried-jekyll-theme">Deep-fried</a> was 
-              created by <a href="http://www.kiltandcode.com">Steven McLintock</a> and is 
-              named after <em>"Scotland’s craziest takeaway"</em>, the delicious and 
-              ridiculously unhealthy 
-              <a href="https://en.wikipedia.org/wiki/Deep-fried_Mars_bar">Deep-fried 
-              Mars bar.</a>'
+  header-text: 'Hintdesk is the personal website of Tri Nguyen'
+  intro-text: '<a href="/about">Tri Nguyen</a> is a full stack software engineer, software 
+              architect, project leader working in Bayern,Germany. 
+              I just write some notes for me here. 
+              No big deal. You can read more in the <a href="/articles">archives</a>.'
   intro-image: 'deep-fried-chocolate.png'
   latest-articles-enabled: true
   latest-articles-title-text: 'Latest Articles'
