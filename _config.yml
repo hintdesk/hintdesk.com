@@ -1,6 +1,6 @@
 # Site settings
 baseurl: ''
-url: 'https://github.com/hintdesk/blog'
+url: 'https://hintdesk.github.io/blog/'
 title: 'Deep-fried'
 description: 'A minimalist Jekyll theme optimized for readability and performance.'
 author: 'Steven McLintock'
