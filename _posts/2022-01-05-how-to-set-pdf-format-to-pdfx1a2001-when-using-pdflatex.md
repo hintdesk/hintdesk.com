@@ -1,5 +1,5 @@
 ---
-title: "How to set PDF format to PDF/X-1a:2001 when using pdflatex"
+title: "How to set PDF format to PDF/X-1a:2001 when using pdflatex?"
 date: 2022-01-05 00:00:00:00 +00:00
 author: tri
 layout: post
@@ -12,7 +12,6 @@ tags: latex,pdf,pdf/x-1a:2001
 Last week I ordered a print copy of the ebook "Machine Learning Cơ Bản" of tiepvupsu https://github.com/tiepvupsu/ebookMLCB. I thought it should be simple because I already had a PDF copy. It just needs to be printed. However, the printing house has asked me for a PDF format of PDF/X-1a:2001. In this article, I will show you how to compile a PDF/X-1a:2001 file from a .tex file.
 
 ## Steps
-<br />
 
 - Check out the code from GIT repository.
 - Locate <em>book_ML.tex</em>. Open it, find <em>begin{document}</em>, add the following lines before it. These lines will set the format to PDF/X-1a:2001 and PDF version to 3 (or PDF 13).
