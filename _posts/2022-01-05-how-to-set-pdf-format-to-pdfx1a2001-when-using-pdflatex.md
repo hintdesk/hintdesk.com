@@ -11,18 +11,8 @@ tags: latex,pdf,pdf/x-1a:2001
 ## Intro
 Last week I ordered a print copy of the ebook "Machine Learning Cơ Bản" of tiepvupsu https://github.com/tiepvupsu/ebookMLCB. I thought it should be simple because I already had a PDF copy. It just needs to be printed. However, the printing house has asked me for a PDF format of PDF/X-1a:2001. In this article, I will show you how to compile a PDF/X-1a:2001 file from a .tex file. The generated PDF file will have no bookmark, no image transparency.
 
-## Solution 1
+## Steps
 
-- If the size of converted PDF file is not a problem, the following lines can help converting any PDF file to PDF/X-1a:2001 PDF 1.3. This will create a 60 MB from a 30 MB PDF file but it's ready for printing with all fonts embedded.
-
-```terminal
-pdf2ps book_ML.pdf
-ps2pdf13 -dPDFSETTINGS=/prepress book_ML.ps book_ML_2.pdf
-```
-
-## Solution 2
-
-- This solution will create a smaller PDF file. However the printing house may have the problem with embedded fonts.
 - Check out the code from GIT repository.
 - Locate <em>book_ML.tex</em>. Open it.
 - Find <em>documentclass</em>, add the following line before it. The line will set PDF version to 3 (or PDF 13)
@@ -108,3 +98,10 @@ pdflatex book_ML.tex
     file='06_001.png'
     alt='Adobe PDF Reader Conformance'
 %}
+
+- To clear all problems with embedded font, I have to execute these commands against the newly created <em>book_ML.pdf</em>.
+
+```terminal
+pdf2ps book_ML.pdf
+ps2pdf13 -dPDFSETTINGS=/prepress book_ML.ps book_ML_2.pdf
+```
