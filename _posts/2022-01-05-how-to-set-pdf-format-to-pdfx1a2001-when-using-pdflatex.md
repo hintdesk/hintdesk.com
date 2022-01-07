@@ -99,7 +99,7 @@ pdflatex book_ML.tex
     alt='Adobe PDF Reader Conformance'
 %}
 
-- To clear all problems with embedded font, I have to execute these commands against the newly created <em>book_ML.pdf</em>.
+- To clear all problems with embedded fonts, I have to execute these commands against the newly created <em>book_ML.pdf</em>.
 
 ```terminal
 pdf2ps book_ML.pdf
