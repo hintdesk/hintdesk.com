@@ -14,13 +14,17 @@ Last week I ordered a print copy of the ebook "Machine Learning Cơ Bản" of ti
 ## Steps
 
 - Check out the code from GIT repository.
-- Locate <em>book_ML.tex</em>. Open it, find <em>begin{document}</em>, add the following lines before it. These lines will set the format to PDF/X-1a:2001 and PDF version to 3 (or PDF 13).
+- Locate <em>book_ML.tex</em>. Open it.
+- Find <em>documentclass</em>, add the following line before it. The line will set PDF version to 3 (or PDF 13)
 
 ```terminal
-\pdfinfo{
-/GTS_PDFXVersion (PDF/X-1a:2001)
-}
 \pdfminorversion=3
+```
+
+- Find <em>begin{document}</em>, add the following line before it. The line will set the format to PDF/X-1a:2001.
+
+```terminal
+\usepackage[x-1a1]{pdfx}
 ```
 
 - Install <em>mactex</em>. It will take a while to get through the installation.
