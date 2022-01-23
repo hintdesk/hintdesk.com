@@ -37,8 +37,8 @@ Oracle allow us to create free resources (such as VM) at their cloud services fo
 
 - Make sure **Generate API Key Pair** is selected, click **Download Private Key** and save it as file **oci_private_key.pem**.
 - Click **Add**. Copy the contents from the textarea and save it as file **config**. 
-- Put the **config** and **oci_private_key.pem** files together in one directory.
-- Open the **config** file and edit the row of **key_file**. That is the path to your private key. NOTE: If you use Windows, the path must be a absolute path.
+- Put the **config** and **oci_private_key.pem** files together in same directory.
+- Open the **config** file and edit the row of **key_file**. That is the path to your private key. NOTE: If you use Windows, the path must be an absolute path.
 
 ```terminal
 key_file=oci_private_key.pem
