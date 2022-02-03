@@ -173,6 +173,15 @@ python3 oci_auto.py
 %}
 
 - It may take days until there is a free slot for you. The script will quit and give back a message when he creates a VM successfully.
+
+{%
+    include image.html
+    year='2022'
+    month='01'
+    file='15_018.png'
+    alt='VM created successfully'
+%}
+
 - After the VM gets created, go to [Instances](https://cloud.oracle.com/compute/instances/), select the newly created instance.
 - Scroll down to **Resources**. Select **Attached VNICs**. Click on the newly create VNIC.
 - Scroll down to **Resources**. Select **IPv4 Addresses**. **Edit** and select **Ephemeral public IP**. Click **Update**.
