@@ -4,3 +4,5 @@ pdf:
   src: /assets/img/icons/pdf.png
 server:
   src: /assets/img/icons/server.png
+docker:
+  src: /assets/img/icons/docker.png
