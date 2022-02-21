@@ -11,7 +11,7 @@ tags: docker
 ## Intro
 In this post I would like to list some useful commands for using Docker in Linux.
 
-## Commands
+## Dockers
 
 - List all images with their IPs.
 
@@ -23,12 +23,6 @@ In this post I would like to list some useful commands for using Docker in Linux
 
 ```terminal
 docker system prune --volumes
-```
-
-- List folder with size.
-
-```terminal
-du -h --max-depth=1
 ```
 
 - Start a dummy image to create a network interface with specific IP sub-range.
@@ -54,4 +48,12 @@ and then use the network for the image as following
 networks:
   default:
      name: network_default
+```
+
+## Linux
+
+- List all folders of the first level with size.
+
+```terminal
+du -h --max-depth=1
 ```
