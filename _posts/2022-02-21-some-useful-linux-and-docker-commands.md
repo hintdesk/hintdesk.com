@@ -30,3 +30,20 @@ docker system prune --volumes
 ```terminal
 du -h --max-depth=1
 ```
+
+- Start a dummy image to create a network interface with specific IP sub-range.
+
+```terminal
+version: '3.5'
+
+services:
+  network_default:
+    image: hello-world:latest
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet:  192.168.0.0/16
+```
