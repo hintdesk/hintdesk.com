@@ -16,9 +16,7 @@ In this post I would like to list some useful commands for using Docker in Linux
 - List all images with their IPs.
 
 ```terminal
-{% raw %}
-docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';
-{% endraw %}
+{% raw %}docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';{% endraw %}
 ```
 
 - Delete all obsolete images.
