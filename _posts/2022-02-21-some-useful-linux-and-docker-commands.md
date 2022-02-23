@@ -19,7 +19,7 @@ In this post I would like to list some useful commands for using Docker in Linux
 {% raw %}docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';{% endraw %}
 ```
 
-- Delete all obsolete images.
+- Delete all obsolete images, volumes and networks...
 
 ```terminal
 docker system prune --volumes
@@ -56,4 +56,10 @@ networks:
 
 ```terminal
 du -h --max-depth=1
+```
+
+- Check if port is in use
+
+```terminal
+sudo lsof -i -P -n
 ```
