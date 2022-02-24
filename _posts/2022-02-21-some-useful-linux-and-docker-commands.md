@@ -63,3 +63,19 @@ du -h --max-depth=1
 ```terminal
 sudo lsof -i -P -n
 ```
+
+- Update Ubuntu system
+
+```terminal
+sudo apt-get update      
+sudo apt-get upgrade      
+sudo apt-get dist-upgrade  
+sudo apt-get autoremove
+sudo reboot
+```
+
+- Show summary info of Ubuntu system
+
+```terminal
+landscape-sysinfo
+```

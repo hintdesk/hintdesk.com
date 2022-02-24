@@ -6,3 +6,5 @@ server:
   src: /assets/img/icons/server.png
 docker:
   src: /assets/img/icons/docker.png
+elasticsearch:
+  src: /assets/img/icons/elasticsearch.png
