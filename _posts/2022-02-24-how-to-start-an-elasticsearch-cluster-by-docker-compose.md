@@ -9,7 +9,7 @@ tags: elasticsearch
 ---
 
 ## Intro
-In this post I would like to document how I could start an Elasticsearch Cluster by Docker compose and how I resolve the out of memory error during installation. For detailed instructions and explainations, you can follow this link https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-stack-docker.html. 
+In this post I would like to document how I could start an Elasticsearch Cluster by Docker compose and how I resolve the out of memory error during installation. For detailed instructions and explainations, you can follow this link [elastic/get-started](https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-stack-docker.html). 
 
 ## Steps
 
