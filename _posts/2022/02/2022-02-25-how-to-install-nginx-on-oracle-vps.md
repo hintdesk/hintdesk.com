@@ -43,7 +43,7 @@ In this post I would like to document how I install nginx and open the ports on 
     alt='Virtual Cloud Networks'
 %}
 
-- Click **Add Ingress Rules" then add new rule for port 80 and 443.
+- Click **Add Ingress Rules** then add new rule for port 80 and 443.
 
 {%
     include image.html
