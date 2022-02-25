@@ -223,7 +223,5 @@ python3 oci_auto.py
     alt='Instance details'
 %}
 
-- If you have any question, you can start a new [discussion](https://github.com/hintdesk/hintdesk.com/discussions).
-
 
 
