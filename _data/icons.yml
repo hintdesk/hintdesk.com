@@ -8,3 +8,5 @@ docker:
   src: /assets/img/icons/docker.png
 elasticsearch:
   src: /assets/img/icons/elasticsearch.png
+nginx:
+  src: /assets/img/icons/nginx.png

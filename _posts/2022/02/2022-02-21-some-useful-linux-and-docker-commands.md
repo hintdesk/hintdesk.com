@@ -79,3 +79,13 @@ sudo reboot
 ```terminal
 landscape-sysinfo
 ```
+
+- To install .Net Core on Linux Arm64
+
+https://docs.microsoft.com/en-us/dotnet/core/install/linux-scripted-manual#manual-install
+
+Use this command to reload bash and make **dotnet** command available.
+
+```terminal
+source ~/.bashrc
+```
