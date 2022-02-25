@@ -5,7 +5,7 @@ author: tri
 layout: post
 image: /assets/img/2021/06/deep-fried.png
 icon: nginx
-tags: nginx,oracle
+tags: nginx oracle
 ---
 
 ## Intro

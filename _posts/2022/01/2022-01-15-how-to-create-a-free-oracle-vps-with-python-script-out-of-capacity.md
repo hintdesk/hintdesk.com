@@ -5,7 +5,7 @@ author: tri
 layout: post
 image: /assets/img/2021/06/deep-fried.png
 icon: server
-tags: oracle,vps
+tags: oracle
 ---
 
 ## Intro
