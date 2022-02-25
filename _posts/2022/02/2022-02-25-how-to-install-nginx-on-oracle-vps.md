@@ -9,7 +9,6 @@ tags: nginx,oracle
 ---
 
 ## Intro
-
 In this post I would like to document how I install nginx and open the ports on an Oracle VPS. If you're interested in creating a free Oracle VPS, you can follow the instructions in this post [How to create a free Oracle VPS with Python script (Out of capacity)?](https://www.hintdesk.com/2022/01/15/how-to-create-a-free-oracle-vps-with-python-script-out-of-capacity/)
 
 ## Steps
