@@ -1,12 +1,15 @@
+docker:
+  src: /assets/img/icons/docker.png
+dotnet:
+  src: /assets/img/icons/dotnet.png
+elasticsearch:
+  src: /assets/img/icons/elasticsearch.png
 news:
   src: /assets/img/icons/news.png
+nginx:
+  src: /assets/img/icons/nginx.png
 pdf:
   src: /assets/img/icons/pdf.png
 server:
   src: /assets/img/icons/server.png
-docker:
-  src: /assets/img/icons/docker.png
-elasticsearch:
-  src: /assets/img/icons/elasticsearch.png
-nginx:
-  src: /assets/img/icons/nginx.png
+

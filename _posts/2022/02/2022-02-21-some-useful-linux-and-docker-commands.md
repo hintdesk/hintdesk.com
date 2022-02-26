@@ -89,3 +89,50 @@ Use this command to reload bash and make **dotnet** command available.
 ```terminal
 source ~/.bashrc
 ```
+
+- Enable **root** for SSH.
+
+```terminal
+sudo passwd root
+sudo vi /etc/ssh/sshd_config
+```
+
+Set following properties
+
+```terminal
+PermitRootLogin yes
+PasswordAuthentication yes
+```
+
+Restart **SSH**
+
+```terminal
+sudo service sshd restart
+```
+
+- Sample config for using **supervisor** to restart application
+
+```terminal
+sudo apt-get install supervisor
+sudo nano /etc/supervisor/conf.d/{domain}.conf
+```
+
+```terminal
+[program:APP_NAME]
+command=/usr/bin/dotnet API_DLL_PATH
+directory=API_DIR_PATH
+autostart=true
+autorestart=true
+stderr_logfile=/var/log/API_DOMAIN.err.log
+stdout_logfile=/var/log/API_DOMAIN.out.log
+environment=ASPNETCORE_ENVIRONMENT=Production
+user=www-data
+stopsignal=INT
+```
+
+Restart **supervisor**
+
+```terminal
+sudo service supervisor restart
+sudo tail -f /var/log/supervisor/supervisord.log
+```
