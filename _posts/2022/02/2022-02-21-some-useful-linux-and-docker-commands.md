@@ -110,29 +110,9 @@ Restart **SSH**
 sudo service sshd restart
 ```
 
-- Sample config for using **supervisor** to restart application
+- Install Certbot and create certificate for a domain
 
 ```terminal
-sudo apt-get install supervisor
-sudo nano /etc/supervisor/conf.d/{domain}.conf
-```
-
-```terminal
-[program:APP_NAME]
-command=/usr/bin/dotnet API_DLL_PATH
-directory=API_DIR_PATH
-autostart=true
-autorestart=true
-stderr_logfile=/var/log/API_DOMAIN.err.log
-stdout_logfile=/var/log/API_DOMAIN.out.log
-environment=ASPNETCORE_ENVIRONMENT=Production
-user=www-data
-stopsignal=INT
-```
-
-Restart **supervisor**
-
-```terminal
-sudo service supervisor restart
-sudo tail -f /var/log/supervisor/supervisord.log
+sudo apt install certbot python3-certbot-nginx
+sudo certbot --nginx -d {domain}
 ```
