@@ -12,4 +12,5 @@ pdf:
   src: /assets/img/icons/pdf.png
 server:
   src: /assets/img/icons/server.png
-
+tailwindcss:
+  src: /assets/img/icons/tailwindcss.png
