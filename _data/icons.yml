@@ -14,3 +14,5 @@ server:
   src: /assets/img/icons/server.png
 tailwindcss:
   src: /assets/img/icons/tailwindcss.png
+privacy:
+  src: /assets/img/icons/privacy.png
