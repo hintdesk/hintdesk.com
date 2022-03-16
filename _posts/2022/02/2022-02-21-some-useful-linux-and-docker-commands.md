@@ -46,8 +46,9 @@ and then use the network for the image as following
 
 ```terminal
 networks:
-  default:
-     name: network_default
+  default: 
+    external:
+      name: network_default
 ```
 
 ## Linux
