@@ -4,7 +4,7 @@ date: 2021-11-01 00:00:00:00 +00:00
 author: tri
 layout: post
 image: /assets/img/2021/06/deep-fried.png
-icon: news
+icon: privacy
 tags: privacy_policy
 ---
 
