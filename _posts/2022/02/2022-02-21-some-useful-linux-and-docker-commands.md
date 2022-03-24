@@ -65,6 +65,12 @@ du -h --max-depth=1
 sudo lsof -i -P -n
 ```
 
+- List all opened ports through firewall
+
+```terminal
+sudo firewall-cmd --list-all
+```
+
 - Update Ubuntu system
 
 ```terminal
