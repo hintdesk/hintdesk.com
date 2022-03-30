@@ -51,6 +51,25 @@ networks:
       name: network_default
 ```
 
+- Save image to file.
+
+```terminal
+docker save -o ./{filename}.tar {image_name}
+```
+
+The *image_name* can be get through
+
+```terminal
+docker images
+```
+
+- To install *.tar* file
+
+```terminal
+docker load -i {filename}.tar
+```
+
+
 ## Linux
 
 - List all folders of the first level with size.
