@@ -38,7 +38,7 @@ Add or edit **vm.max_map_count**
 vm.max_map_count=262144
 ```
 
-- Go to [elastic/stack-docs](https://github.com/elastic/stack-docs/tree/main/docs/en/getting-started/docker), download **.env** and **docker-compose.yml** files.
+- Go to [elastic/stack-docs](https://github.com/elastic/elasticsearch/tree/master/docs/reference/setup/install/docker), download **.env** and **docker-compose.yml** files.
 
 - Edit **.env** file with the your settings. 
 - Add this option below to **.env** for setting Java Heap Size.
