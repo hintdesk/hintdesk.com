@@ -100,7 +100,7 @@ sudo apt-get autoremove
 sudo reboot
 ```
 
-- Show summary info of Ubuntu system
+- Show summary info of Ubuntu system.
 
 ```terminal
 landscape-sysinfo
@@ -113,22 +113,29 @@ sudo passwd root
 sudo vi /etc/ssh/sshd_config
 ```
 
-Set following properties
+Set following properties.
 
 ```terminal
 PermitRootLogin yes
 PasswordAuthentication yes
 ```
 
-Restart **SSH**
+Restart **SSH**.
 
 ```terminal
 sudo service sshd restart
 ```
 
-- Install Certbot and create certificate for a domain
+- Install Certbot and create certificate for a domain.
 
 ```terminal
 sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d {domain}
 ```
+
+- Check if port is accessible from outside.
+
+```terminal
+nc -vz {IP_OR_COMPUTER_NAME} 24224
+```
+
