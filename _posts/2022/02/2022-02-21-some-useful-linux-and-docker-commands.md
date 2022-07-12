@@ -78,6 +78,12 @@ docker load -i {filename}.tar
 du -h --max-depth=1
 ```
 
+or 
+
+```terminal
+sudo df -h
+```
+
 - Check if port is in use
 
 ```terminal
@@ -137,5 +143,11 @@ sudo certbot --nginx -d {domain}
 
 ```terminal
 nc -vz {IP_OR_COMPUTER_NAME} 24224
+```
+
+- Create *.pem* from *.pfx* certificate
+
+```terminal
+openssl pkcs12 -in file.pfx -out file.pem -nodes
 ```
 
