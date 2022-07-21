@@ -19,6 +19,12 @@ In this post I would like to list some useful commands for using Docker in Linux
 {% raw %}docker ps -q | xargs -n 1 docker inspect --format '{{ .Name }} {{range .NetworkSettings.Networks}} {{.IPAddress}}{{end}}' | sed 's#^/##';{% endraw %}
 ```
 
+- List all files of a volume
+
+```terminal
+docker run -it --rm -v indexer_ocr_pdf:/vol busybox ls -l /vol
+```
+
 - Delete all obsolete images, volumes and networks...
 
 ```terminal
