@@ -16,3 +16,5 @@ tailwindcss:
   src: /assets/img/icons/tailwindcss.png
 privacy:
   src: /assets/img/icons/privacy.png
+k8s:
+  src: /assets/img/icons/k8s.png
