@@ -45,26 +45,3 @@ helm list
 ```terminal
 helm install {release-name} {folder}
 ```
-
-
-## Rancher Desktop
-
-- Set proxy for Rancher Desktop
-
-```terminal
-setx HTTP_PROXY http://your_proxy_server
-setx HTTPS_PROXY https://your_ssl_proxy_server
-setx WSLENV HTTP_PROXY:HTTPS_PROXY
-```
-
-Restart Rancher Desktop and check if the proxy has been applied
-
-```terminal
-wsl -d rancher-desktop echo ${HTTP_PROXY}
-wsl -d rancher-desktop echo ${HTTPS_PROXY}
-```
-
-
-
-
-
