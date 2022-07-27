@@ -31,6 +31,17 @@ kubectl get po
 kubectl get deploy
 ```
 
+- Get port of a pod
+
+```terminal
+kubectl get pod --namespace default $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}
+```
+
+- Port forwarding
+
+```terminal
+kubectl --namespace default port-forward $POD_NAME 8080:$CONTAINER_PORT
+```
 
 ## Helm
 
