@@ -166,9 +166,9 @@ grep -r VARIABLE_NAME /etc/*
 - Extract private key from pfx and remove passphrase using OpenSSL (Use GitBash)
 
 ```terminal
-openssl pkcs12 -in 1.pfx -clcerts -nokeys -out 1.cer
-openssl pkcs12 -in 1.pfx -nocerts -out 1.private.key
-openssl rsa -in 1.private.key -out 1.key
+winpty openssl pkcs12 -in 1.pfx -clcerts -nokeys -out 1.cer
+winpty openssl pkcs12 -in 1.pfx -nocerts -out 1.private.key
+winpty openssl rsa -in 1.private.key -out 1.key
 ```
 
 
