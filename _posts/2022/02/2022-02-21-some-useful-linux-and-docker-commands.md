@@ -157,3 +157,19 @@ nc -vz {IP_OR_COMPUTER_NAME} 24224
 openssl pkcs12 -in file.pfx -out file.pem -nodes
 ```
 
+- Find where the environment variable is set
+
+```terminal
+grep -r VARIABLE_NAME /etc/*
+```
+
+- Extract private key from pfx and remove passphrase using OpenSSL (Use GitBash)
+
+```terminal
+openssl pkcs12 -in 1.pfx -clcerts -nokeys -out 1.cer
+openssl pkcs12 -in 1.pfx -nocerts -out 1.private.key
+openssl rsa -in 1.private.key -out 1.key
+```
+
+
+
