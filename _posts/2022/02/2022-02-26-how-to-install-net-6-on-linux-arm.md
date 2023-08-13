@@ -77,3 +77,9 @@ Restart **supervisor**
 sudo service supervisor restart
 sudo tail -f /var/log/supervisor/supervisord.log
 ```
+
+or 
+
+```terminal
+supervisorctl restart canduyentiendinh
+```
