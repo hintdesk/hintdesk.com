@@ -96,6 +96,13 @@ sudo df -h
 sudo lsof -i -P -n
 ```
 
+or 
+
+```terminal
+sudo lsof -i -P -n | grep dotnet
+```
+
+
 - List all opened ports through firewall
 
 ```terminal
