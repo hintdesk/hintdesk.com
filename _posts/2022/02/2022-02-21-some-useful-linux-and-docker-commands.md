@@ -28,6 +28,7 @@ docker run -it --rm -v named_volume:/vol busybox ls -l /vol
 - Delete all obsolete images, volumes and networks...
 
 ```terminal
+docker image prune -a
 docker system prune --volumes
 ```
 
