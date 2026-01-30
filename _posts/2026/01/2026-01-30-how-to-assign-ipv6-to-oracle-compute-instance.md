@@ -8,8 +8,6 @@ icon: server
 tags: oracle
 ---
 
-## Introduction
-
 This guide provides step-by-step instructions for assigning an IPv6 address to an active Oracle Cloud Compute Instance. Follow the procedures below to ensure proper configuration and connectivity.
 
 ## Procedure
