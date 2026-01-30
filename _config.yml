@@ -61,12 +61,12 @@ footer-menu:
 
 # Homepage
 homepage:
-  header-text: 'Hintdesk is the personal website of Tri Nguyen'
+  # header-text: 'Hintdesk is the personal website of Tri Nguyen'
   intro-text: '<a href="/about">Tri Nguyen</a> is a full stack developer, software engineer, software 
               architect, project leader working in Bayern, Germany. 
               I just write some notes for me here. 
               No big deal. You can read more in the <a href="/articles">archives</a>.'
-  intro-image: 'intro.png'
+  #intro-image: 'intro.png'
   latest-articles-enabled: true
   latest-articles-title-text: 'Latest Articles'
   latest-articles-link-enabled: true
