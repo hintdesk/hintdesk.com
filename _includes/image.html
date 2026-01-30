@@ -5,7 +5,7 @@
 {%- assign caption = include.caption | default : '' -%}
 {%- if file.size > 0 and alt.size > 0 -%}
 <figure class="image">
-{%- if month.size > 0 and year.size > 0 -}
+{%- if month.size > 0 and year.size > 0 -%}
 <img src="{{ site.baseurl }}/assets/img/{{ year }}/{{ month }}/{{ file }}" alt="{{ alt }}" />
 {%- else -%}
 <img src="{{ site.baseurl }}/assets/img/{{ file }}" alt="{{ alt }}" />
