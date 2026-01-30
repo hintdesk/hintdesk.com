@@ -72,7 +72,7 @@ This guide provides step-by-step instructions for assigning an IPv6 address to a
    {% include image.html year='2026' month='01' file='30_014.png' alt='Ingress Rules' %}
    - Add the following rule:
      - **Source CIDR:** ::/0
-     - **IP Protocol:** All Protocols
+     - **IP Protocol:** All Protocols (or TCP with Destination Port 443)
    
    {% include image.html year='2026' month='01' file='30_015.png' alt='Ingress Rules' %}
    - The entries should appear as follows:
