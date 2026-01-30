@@ -247,7 +247,7 @@ main {
 }
 
 header {
-  margin-bottom: 70px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -365,7 +365,7 @@ div.highlight {
 }
 
 .top-bumper {
-  margin-top: 35px;
+  margin-top: 70px;
 }
 
 .bottom-bumper {
