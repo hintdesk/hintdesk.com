@@ -11,22 +11,6 @@ layout: default
     </section>
     {% endif %}
 
-    {% if site.homepage.intro-text.size > 0 or site.homepage.intro-image.size > 0 %}
-    <section class="text-center mb-70">
-        {% if site.homepage.intro-text.size > 0 %}
-        <p>{{ site.homepage.intro-text }}</p>
-        {% endif %}
-
-        {% if site.homepage.intro-image.size > 0 %}
-        {%
-            include image.html
-            file=site.homepage.intro-image
-            alt=site.title
-        %}
-        {% endif %}
-    </section>
-    {% endif %}
-    
     {% if site.homepage.latest-articles-enabled %}
     {% if site.homepage.latest-articles-title-text.size > 0 %}
     <section class="text-center top-bumper bottom-bumper">
