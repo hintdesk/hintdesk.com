@@ -1,19 +1,24 @@
-<header>
-    {% if site.logo-motif.enabled and site.logo-motif.src.size > 0 and site.logo-motif.width.size > 0 and site.logo-motif.height.size > 0 %}
-    <a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}{{ site.logo-motif.src }}" alt="{{ site.title }}" width="{{ site.logo-motif.width }}" height="{{ site.logo-motif.height }}" /></a>
-    {% endif %}
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-branding">
+      <a href="{{ site.baseurl }}/" class="site-logo-link">
+        {% if site.logo-motif.enabled and site.logo-motif.src.size > 0 %}
+        <img class="site-logo-img" src="{{ site.baseurl }}{{ site.logo-motif.src }}" alt="{{ site.title }}" />
+        {% endif %}
+        <span>{{ site.title }}</span>
+      </a>
+    </div>
 
-    {% if site.logo-title.enabled %}
-    <section class="logo-title">
-        <a href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </section>
-    {% endif %}
-
-    <nav>
-        <ul>
-            {% for item in site.header-menu %}
-            <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
-            {% endfor %}
-        </ul>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        {% for item in site.header-menu %}
+        <li>
+          <a href="{{ site.baseurl }}{{ item.url }}" {% if page.url == item.url or page.url == item.url | append: '/' %}class="active"{% endif %}>
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
     </nav>
+  </div>
 </header>

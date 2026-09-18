@@ -2,24 +2,25 @@
 layout: default
 ---
 
-<article>
-    {% if site.articles.header-text.size > 0 %}
-    <section class="page-header">
-      <h1>
-        {{ site.articles.header-text }}
-      </h1>
-    </section>
-    {% endif %}
+<section>
+  <div class="page-header">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;">
+      <h1>{{ site.articles.header-text | default: "All Articles" }}</h1>
+      <span class="section-badge">{{ site.posts.size }} articles</span>
+    </div>
+  </div>
 
+  <div class="article-list">
     {% for post in site.posts %}
     {%
-        include article-summary.html
-        url=post.url
-        title=post.title
-        date=post.date
-        icon=post.icon
-        author=post.author
-        excerpt=post.excerpt
+      include article-summary.html
+      url=post.url
+      title=post.title
+      date=post.date
+      icon=post.icon
+      author=post.author
+      excerpt=post.excerpt
     %}
     {% endfor %}
-</article>
+  </div>
+</section>

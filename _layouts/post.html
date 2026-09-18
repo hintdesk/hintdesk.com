@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<article>
-  {% if page.title.size > 0 and page.author.size > 0 %}
-    <section class="page-header">
+<article class="post">
+  {% if page.title.size > 0 %}
+    <header class="page-header">
       {% if page.icon.size > 0 %}
         {%
           include icon.html
@@ -13,22 +13,32 @@ layout: default
         %}
       {% endif %}
 
-      <h1>
-        {{ page.title }}
-      </h1>
+      <h1>{{ page.title }}</h1>
 
-      {%
-        include written-on.html
-        date=page.date
-        author=page.author
-      %}
-    </section>
+      {% if page.author.size > 0 %}
+        {%
+          include written-on.html
+          date=page.date
+          author=page.author
+        %}
+      {% endif %}
+    </header>
   {% endif %}
 
-  {{ content }}
+  <div class="post-content">
+    {{ content }}
+  </div>
 
-  <h2 id="comments">Comments</h2>
-  <p>If you have any question, you can start a new <a href="https://github.com/hintdesk/hintdesk.com/discussions">discussion.</a></p>
-  
+  <div class="post-discussion-card">
+    <div>
+      <strong>Have feedback or questions?</strong>
+      <p>Start a discussion or share your thoughts on GitHub.</p>
+    </div>
+    <a class="post-discussion-btn" href="https://github.com/hintdesk/hintdesk.com/discussions" target="_blank" rel="noopener noreferrer">
+      <span>Discussions</span>
+      <span aria-hidden="true">&rarr;</span>
+    </a>
+  </div>
+
   {% include related-posts.html %}
 </article>

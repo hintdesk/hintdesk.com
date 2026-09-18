@@ -3,10 +3,10 @@
 {% if site.written-on.enabled and author.size > 0 %}
 {% assign name = site.data.authors[author].name | default : '' %}
 {% if name.size > 0 %}
-<small>
-    <em>
-        {{ site.written-on.by-text }} {{ name }} {{ site.written-on.on-text }} <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date: "%B" }} {{ include.date | date: "%-d" }}, {{ include.date | date: "%Y" }}</time>
-    </em>
-</small>
+<span class="article-meta">
+  <time datetime="{{ include.date | date_to_xmlschema }}">{{ include.date | date: "%b %-d, %Y" }}</time>
+  <span>&middot;</span>
+  <span>{{ name }}</span>
+</span>
 {% endif %}
 {% endif %}

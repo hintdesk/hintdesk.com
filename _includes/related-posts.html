@@ -1,9 +1,10 @@
 {% if site.related-posts.enabled and page.tags.size > 0 %}
 <section class="related-posts">
-    <h2 class="text-center">{{ site.related-posts.header-text }}</h2>
+    <h3>{{ site.related-posts.header-text }}</h3>
     
     {% assign relatedPosts = 0 %}
 
+    <div class="article-list">
     {% for post in site.posts %}
         {% assign matches = 0 %}
 
@@ -33,13 +34,14 @@
             {% endif %}
         {% endif %}
     {% endfor %}
+    </div>
 
     {% if relatedPosts == 0 %}
-    <p class="text-center">
+    <p>
         <small>
             {{ site.related-posts.no-related-articles-text }}
         </small>
     </p>
     {% endif %}
-</div>
+</section>
 {% endif %}

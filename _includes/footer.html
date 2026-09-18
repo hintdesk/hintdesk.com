@@ -1,11 +1,15 @@
-<footer>
-  <nav>
-    <ul>
+<footer class="site-footer">
+  <div class="site-footer-inner">
+    <div>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <ul>
         {% for item in site.footer-menu %}
-        <li><small><a href="{{ item.url }}">{{ item.name }}</a></small></li>
+        <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
-    </ul>
-  </nav>
-  
-  <small><em>{{ site.title }} - Powered by <a href="https://jekyllrb.com">Jekyll</a> and the <a href="https://github.com/kiltandcode/deep-fried-jekyll-theme">Deep-fried</a> theme</em></small>
+      </ul>
+    </nav>
+  </div>
 </footer>
