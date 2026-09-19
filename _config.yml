@@ -49,12 +49,10 @@ logo-title:
 # Header menu
 header-menu:
 - { name: 'Home', url: '/' }
-- { name: 'About', url: '/about' }
+- { name: 'About', url: '/about/' }
 
 # Footer menu
 footer-menu:
-- { name: 'Home', url: '/' }
-- { name: 'About', url: '/about' }
 - { name: 'RSS', url: '/feed.xml' }
 
 # Homepage
@@ -62,12 +60,12 @@ homepage:
   # header-text: 'Hintdesk is the personal website of Tri Nguyen'
   intro-text: 'I am a software engineer based in Bayern, Germany. 
               I maintain this blog to document practical notes, solutions, and engineering ideas. 
-              Feel free to explore the full collection in the <a href="/articles">archives</a>.'
+              Feel free to explore the full collection in the <a href="/articles/">archives</a>.'
   #intro-image: 'intro.png'
   latest-articles-enabled: true
   #latest-articles-title-text: 'Latest Articles'
   latest-articles-link-enabled: true
-  latest-articles-link-url: '/articles'
+  latest-articles-link-url: '/articles/'
   latest-articles-link-text: 'View all articles'
 
 # Articles
