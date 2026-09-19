@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
 
 {% for stylesheet in site.stylesheets %}
-<link rel="stylesheet" href="{{ site.baseurl }}{{ stylesheet }}" />
+<link rel="stylesheet" href="{{ site.baseurl }}{{ stylesheet }}?v={{ site.time | date: '%s' }}" />
 {% endfor %}
 
 {% feed_meta %}
