@@ -20,3 +20,5 @@ k8s:
   src: /assets/img/icons/k8s.png
 rancherdesktop:
   src: /assets/img/icons/rancherdesktop.png
+mongodb:
+  src: /assets/img/icons/mongodb.png
